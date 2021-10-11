@@ -1,0 +1,158 @@
+// @mixin font-size($n) {
+//   font-size: $n * 1.25em;
+// }
+@mixin bg-gradient {
+  background: rgba(232,103,118,1);
+  background: -moz-linear-gradient(45deg, #e86776 0%, #c54351 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(232,103,118,1)), color-stop(100%, rgba(197,67,81,1)));
+  background: -webkit-linear-gradient(45deg, rgba(232,103,118,1) 0%, rgba(197,67,81,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(232,103,118,1) 0%, rgba(197,67,81,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(232,103,118,1) 0%, rgba(197,67,81,1) 100%);
+  background: linear-gradient(45deg, rgba(232,103,118,1) 0%, rgba(197,67,81,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e86776', endColorstr='#c54351', GradientType=1 );
+}
+@mixin bg-gradient-y {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e86776+0,c54351+100 */
+  background: rgb(232,103,118); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(232,103,118,1) 0%, rgba(197,67,81,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(232,103,118,1) 0%,rgba(197,67,81,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(232,103,118,1) 0%,rgba(197,67,81,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e86776', endColorstr='#c54351',GradientType=0 ); /* IE6-9 */
+
+}
+@mixin bg-gradient-purple {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ac79f2+0,6944b3+100 */
+  background: rgb(172,121,242); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(172,121,242,1) 0%, rgba(105,68,179,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(172,121,242,1) 0%,rgba(105,68,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(172,121,242,1) 0%,rgba(105,68,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ac79f2', endColorstr='#6944b3',GradientType=0 ); /* IE6-9 */
+}
+@mixin bg-gradient-golden-y { 
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eab92d+0,c79810+100 */
+  background: rgb(234,185,45); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(234,185,45,1) 0%, rgba(199,152,16,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(234,185,45,1) 0%,rgba(199,152,16,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(234,185,45,1) 0%,rgba(199,152,16,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eab92d', endColorstr='#c79810',GradientType=0 ); /* IE6-9 */
+
+}
+ 
+ 
+// transition time
+@mixin transition1{
+	transition:all 0.25s ease-out;
+	-moz-transition:all 0.25s ease-out;
+	-ms-transition:all 0.25s ease-out;
+	-o-transition:all 0.25s ease-out;
+	-webkit-transition:all 0.25s ease-out;
+}
+@mixin transition2{
+    transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    -ms-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    -webkit-transition:all 0.5s ease-out;
+}
+@mixin transition3{
+	transition:all 1s ease-out;
+	-moz-transition:all 1s ease-out;
+	-ms-transition:all 1s ease-out;
+	-o-transition:all 1s ease-out;
+	-webkit-transition:all 1s ease-out;
+}             
+// font-awesome
+@mixin font-awesome{
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-family: "Font Awesome 5 Free"; 
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased; 
+} 
+// box-shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $color;
+      -moz-box-shadow:inset $top $left $blur $color;
+      box-shadow:inset $top $left $blur $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $color;
+      -moz-box-shadow: $top $left $blur $color;
+      box-shadow: $top $left $blur $color;
+    }
+  }
+  
+// text-shadow
+@mixin text-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+      -webkit-text-shadow:inset $top $left $blur $color;
+      -moz-text-shadow:inset $top $left $blur $color;
+      text-shadow:inset $top $left $blur $color;
+    } @else {
+      -webkit-text-shadow: $top $left $blur $color;
+      -moz-text-shadow: $top $left $blur $color;
+      text-shadow: $top $left $blur $color;
+    }
+  }
+  
+  @mixin text-field {
+   display: inline-block;
+    outline: none;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    @include rounded();
+    @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+  }
+  
+  @mixin button($color: $red, $text_color: $white) {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    @include rounded();
+    @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+  
+    color: $text_color !important;
+    font-weight: bold;
+    border: solid 1px darken($color, 18%);
+    background: $color;
+    @include gradient(saturate($color, 15%), darken($color, 15%));
+  
+    &:hover {
+      text-decoration: none;
+      background: saturate($color, 10%);
+      @include gradient(saturate($color, 5%), darken($color, 5%));
+    }
+  
+    &:active {
+      position: relative;
+      top: 1px;
+      color: saturate($color, 15%);
+      @include gradient(saturate($color, 15%), lighten($color, 15%));
+    }
+  }
+  
+  @mixin rounded($radius: 0.5em) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+  
+  @mixin gradient($from, $to) {
+    background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background: -moz-linear-gradient(top,  $from, $to);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+  }
+ 
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}

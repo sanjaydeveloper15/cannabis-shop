@@ -1,0 +1,101 @@
+
+
+$primary: #E86776; 
+$secondary: #695ecb; 
+
+// colors
+$white:#ffffff;
+$golden:#c79810;
+$light-golden:#eab92d;
+$light-gray:#f0f0f0;
+$cream:#F8F7F4;
+$light-green:#33e733;
+$yellow:#ffd037;
+$light-yellow:#F3E83E;
+$amber:#ffc107;
+$deep-orange:#f03;
+$pink:#e91e63;
+$light-pink:#fafafa;
+$green:#179e39;
+$lime:#cddc39;
+$orange:#ff8943 ;
+$red:#f50d48;
+$light-red:#FAFAFA;
+$deep-red:#c40923;
+$violet:#8f3b92;
+$light-violet:#f9e0fa;
+$indigo:#ffeb3b;
+$dark-blue:#000e6c;
+$light-blue:#6c63ff;
+$light-blue2:#e7faf8;
+$light-peach: #feebde;
+$light-peach2:#fff5ef;
+$peach: #fcd5c2;
+$cyan:#3EA9DD;
+$purple:#AC79F2;
+$gray:#a5a5a5; 
+$deep-violet:#551b57;
+$blue:#34349a;
+$teal:#009688;
+$brown:#795548;
+$coffee:#472A2C;
+$black:#000; 
+$dark:#3e3f49 ; 
+$dark-black:#444;
+
+// Font-Size
+$base-font-size: 0.85rem;
+
+// Line-Height
+$base-line-height: 1.5;
+
+// Breakpoints
+$bp-xsmall: 576px; // 576px
+$bp-small: 768px; // 768px
+$bp-xmedium: 992px; // 992px
+$bp-medium: 1024px; // 1024px
+$bp-large: 1200px; // 1200px
+$bp-xlarge: 1366px; // 1366px
+$bp-xxlarge: 1440px; // 1440px
+$bp-xxxlarge: 1600.98px; // 1600px
+$bp-fullhd: 1920px; // 1920px
+$bp-2k: 2048px; // 1920px
+$bp-4k: 3840px; // 3840px
+
+$mbp-xsmall: 575.98px; // 575.98px
+$mbp-small: 767.98px; // 768.98px
+$mbp-xmedium: 991.98px; // 991.98px
+$mbp-medium: 1023.98px; // 1023.99px
+$mbp-large: 1199.98px; // 1199.98px
+$mbp-xlarge: 1365.98px; // 1365.98px
+$mbp-xxlarge: 1439.98px; // 1439.98px
+$mbp-xxxlarge: 1600px; // 1600pxpx
+$mbp-fullhd: 1919.98px; // 1919.98px
+$mbp-2k: 2047.98px; // 2047.98px
+$mbp-4k: 3839.98px; // 3839.98px
+
+// Media Queries
+$mq-xsmall: "(min-width: #{$bp-xsmall})";// 576px
+$mq-small: "(min-width: #{$bp-small})";// 768px
+$mq-xmedium: "(min-width: #{$bp-xmedium})";// 992px
+$mq-medium: "(min-width: #{$bp-medium})";// 1024px
+$mq-large: "(min-width: #{$bp-large})";// 1200px
+$mq-xlarge: "(min-width: #{$bp-xlarge})";// 1366px
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";// 1440px
+$mq-xxxlarge: "(min-width: #{$bp-xxxlarge})";// 1680px
+$mq-fullhd: "(min-width: #{$bp-fullhd})";// 1920px
+$mq-2k: "(min-width: #{$bp-2k})";// 2048px
+$mq-4k: "(min-width: #{$bp-4k})";// 3840px
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+$mq-max-xsmall: "(max-width: #{$mbp-xsmall})";// 576px
+$mq-max-small: "(max-width: #{$mbp-small})";// 768px
+$mq-max-xmedium: "(max-width: #{$mbp-xmedium})";// 992px
+$mq-max-medium: "(max-width: #{$mbp-medium})";// 1024px
+$mq-max-large: "(max-width: #{$mbp-large})";// 1200px
+$mq-max-xlarge: "(max-width: #{$mbp-xlarge})";// 1366px
+$mq-max-xxlarge: "(max-width: #{$mbp-xxlarge})";// 1440px
+$mq-max-xxxlarge: "(max-width: #{$mbp-xxxlarge})";// 1680px
+$mq-max-fullhd: "(max-width: #{$mbp-fullhd})";// 1920px
+$mq-max-2k: "(max-width: #{$mbp-2k})";// 2048px
+$mq-max-4k: "(max-width: #{$mbp-4k})";// 3840px

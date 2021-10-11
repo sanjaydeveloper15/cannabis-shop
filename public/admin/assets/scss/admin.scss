@@ -1,0 +1,48 @@
+@import "_bourbon.scss"; 
+@import "_common.scss"; 
+
+.store-sidebar.admin-sidebar{
+  .navbar-brand{
+    background: transparent!Important;
+  }
+  nav{
+    padding-left: 0;
+    ul{
+      li{
+        a{
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.article-body { 
+  padding: 3rem 1rem 1rem;
+}
+header{
+  background: #F5F5F5;
+}
+.group-tabs{
+  .nav-item{
+    padding:0 0;
+    .nav-link{
+      min-width: 120px;
+      padding: 12px;
+      @media #{$mq-large} {
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+ .table-light{
+   tr{
+     td{
+       vertical-align: middle;
+       @media #{$mq-large} {
+        padding: 1rem .5rem;
+      }
+     }
+   }
+ }
